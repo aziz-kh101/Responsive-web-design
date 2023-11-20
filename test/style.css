@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.zone-2 {
+  background-color: red;
+}
+
+.zone-3 {
+  background-color: blue;
+}
+
+.zone-2,
+.zone-3 {
+  width: 50%;
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .zone-2,
+  .zone-3 {
+    width: initial;
+    float: none;
+  }
+}
