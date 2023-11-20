@@ -1,0 +1,151 @@
+* :not(.icon) {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #202124;
+  color: white;
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0px;
+  min-width: 350px;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+}
+
+header .avatar {
+  border-radius: 50%;
+}
+
+header .icon {
+  width: 24px;
+  height: 24px;
+  color: inherit;
+  padding: 0 10px;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title {
+  width: 100%;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.search-container .actions {
+  width: fit-content;
+}
+
+.search-container .search-input-container {
+  display: flex;
+  max-width: 600px;
+  width: 100%;
+  padding: 5px 8px 0px 14px;
+  border: 1px solid #5f6368;
+  border-radius: 24px;
+  gap: 10px;
+  align-items: center;
+}
+
+.search-container .search-input-container .icon {
+  width: 20px;
+  height: 20px;
+  margin: 10px 0px;
+  padding: 0 5px;
+}
+
+.search-container .search-input-container .icon.right {
+  margin: unset;
+  height: 25px;
+  width: 25px;
+  margin-bottom: 5px;
+}
+
+.search-container .search-input-container .search-input {
+  flex: 1;
+  outline: none;
+  margin-bottom: 5px;
+}
+
+.actions button {
+  background-color: #303134;
+  border: 1px solid #303134;
+  border-radius: 4px;
+  color: #e8eaed;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.lang-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.lang-container .lang {
+  display: flex;
+  gap: 10px;
+}
+
+.lang-container .lang a {
+  color: #8ab4f8;
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #171717;
+  color: #9aa0a6;
+}
+
+footer .location {
+  padding: 15px 30px;
+  border-bottom: 1px solid #3c4043;
+}
+
+footer .links {
+  display: flex;
+  padding: 0px 30px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+footer .links :is(.right, .left) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer .links :is(.right, .left) a {
+  text-decoration: none;
+  color: inherit;
+  padding: 20px;
+}
