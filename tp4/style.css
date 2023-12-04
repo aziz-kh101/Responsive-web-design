@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&family=Ubuntu:ital,wght@0,300;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  position: absolute;
+  inset: 0;
+  overflow-x: hidden;
+}
+
+body {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+header .logo {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+header nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Montserrat", serif;
+}
+
+header nav ul li a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+header,
+section.first,
+section.last {
+  background-color: #ff4c68;
+}
+
+section.contact {
+  background-color: #ef8172;
+}
+
+section.first {
+  padding: 4rem 2rem;
+}
+
+section.first .first-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 80rem;
+  margin: auto;
+}
+
+section.first .download {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  flex: 1;
+}
+
+.download-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+section.first .download .download-txt {
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+section.first .image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+section.first .image-container img {
+  transform: rotate(19deg);
+}
+
+.download-actions .download-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+  color: white;
+  border: 1px solid var(--border-color);
+}
+
+.download-actions .btn-iphone {
+  --border-color: #343a40;
+  background-color: #343a40;
+}
+
+.download-actions .btn-iphone::before {
+  content: url(images/apple.svg);
+  color: white;
+}
+
+.download-actions .btn-android {
+  --border-color: white;
+  background-color: transparent;
+}
+
+.download-actions .btn-android::before {
+  content: url(images/google-play.svg);
+  color: white;
+}
+
+.download-actions .btn-android-white {
+  --border-color: white;
+  background-color: white;
+  color: black;
+}
+
+.download-actions .btn-android-white::before {
+  content: url(images/google-play-black.svg);
+  color: black;
+}
+
+section.last {
+  min-height: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+section.last .text {
+  font-size: 3rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+footer {
+  height: 10rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer .container .logos {
+  display: flex;
+  gap: 1.5rem;
+}
+
+footer .container .copy {
+  display: flex;
+  color: #343a40;
+  font-size: 0.7rem;
+}
+
+section.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem;
+
+  gap: 2rem;
+}
+
+section.contact .text {
+  font-size: 3rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+section.contact .profile-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+section.contact .profile-container .profile-image {
+  width: 6rem;
+  border-radius: 50%;
+}
+
+section.contact .profile-container .profile-name {
+  font-size: 0.8;
+  font-style: italic;
+}
+
+section.pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+
+  color: black;
+}
+
+section.pricing .text {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+section.pricing .text-tiny {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+section.pricing .card-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+section.pricing .card-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+
+  color: black;
+}
+
+section.pricing .card-container .card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border: 2px solid #ececec;
+  border-radius: 0.5rem;
+  width: 20rem;
+}
+
+section.pricing .card-container .card .title {
+  font-weight: 700;
+  font-size: medium;
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 1rem;
+  border-bottom: 2px solid #ececec;
+}
+
+section.pricing .card-container .card .body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+section.pricing .card-container .card .body .btn {
+  align-self: stretch;
+  border: 1px solid #343a40;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+section.pricing .card-container .card .body span {
+  font-size: small;
+  font-weight: 100;
+}
+
+section.pricing .card-container .card .body .price {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+section.pricing .card-container .card .body .sign-up-vide {
+  color: #343a40;
+  background-color: transparent;
+}
+
+section.pricing .card-container .card .body .sign-up {
+  background-color: #343a40;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  section.first .first-container {
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section.first .first-container .download .download-txt {
+    font-size: 3rem;
+  }
+
+  section:is(.contact, .pricing, .last) .text {
+    font-size: 2rem;
+  }
+}
